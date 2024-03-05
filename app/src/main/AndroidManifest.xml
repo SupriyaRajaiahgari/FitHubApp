@@ -13,6 +13,15 @@
         android:theme="@style/Theme.FitHubApp"
         tools:targetApi="31">
         <activity
+            android:name=".OverWeight"
+            android:exported="false" />
+        <activity
+            android:name=".WeightPlans"
+            android:exported="false" />
+        <activity
+            android:name=".BMICalculator"
+            android:exported="false" />
+        <activity
             android:name=".CreateProfileActivity"
             android:exported="false" />
         <activity
