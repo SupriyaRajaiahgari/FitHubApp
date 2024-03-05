@@ -43,6 +43,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/BodyBuildBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bodybuilding Plan"
@@ -56,6 +57,7 @@
         app:layout_constraintVertical_bias="0.445" />
 
     <Button
+        android:id="@+id/UnderWeightBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Underweight Plan"
@@ -69,6 +71,7 @@
         app:layout_constraintVertical_bias="0.307" />
 
     <Button
+        android:id="@+id/OverweightBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Overweight Plan"

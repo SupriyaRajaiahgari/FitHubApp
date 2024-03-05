@@ -3,6 +3,7 @@ package com.example.fithubapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class OverWeight extends AppCompatActivity {
 
@@ -11,4 +12,5 @@ public class OverWeight extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_over_weight);
     }
-}
+
+    }
