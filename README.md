@@ -1,4 +1,6 @@
 Finalized project proposal : FitHubApp
+
+
 Identify any risky components
 Uses an outside API: 
 
