@@ -16,6 +16,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void OnclickLoginBTN(View view) {
         Intent intent = new Intent(this, CreateProfileActivity.class);
-        startActivity(intent);
+        startActivity(intent);   
     }
 }
