@@ -14,7 +14,9 @@ public class CreateProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_profile);
     }
 
-    public void OnclickSaveProfileBTN(View view) {
+    public void OnclickSaveProfileBTN(View view)
+    {
+        
         Intent intent = new Intent(this, BMICalculator.class);
         startActivity(intent);
 
