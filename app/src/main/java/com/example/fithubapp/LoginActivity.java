@@ -13,11 +13,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-
+    //Added onClick property
     public void OnclickLoginBTN(View view) {
         Intent intent = new Intent(this, CreateProfileActivity.class);
         startActivity(intent);
-
-
     }
 }
