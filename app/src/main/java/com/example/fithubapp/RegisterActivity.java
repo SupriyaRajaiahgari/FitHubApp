@@ -17,5 +17,7 @@ public class RegisterActivity extends AppCompatActivity {
     public void OnclickRegisterBTN(View view) {
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
+
+
     }
 }

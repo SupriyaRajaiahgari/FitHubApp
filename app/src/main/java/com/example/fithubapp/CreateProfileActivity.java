@@ -17,5 +17,9 @@ public class CreateProfileActivity extends AppCompatActivity {
     public void OnclickSaveProfileBTN(View view) {
         Intent intent = new Intent(this, BMICalculator.class);
         startActivity(intent);
+
+
     }
+
+
 }
