@@ -6,25 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".UnderWeight">
 
-
+    <!-- Underweight Plan Layout -->
     <LinearLayout
         android:id="@+id/underweightPlanLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:background="@drawable/background_rounded_corner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
+        <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="underweight Plan"
+            android:text="Underweight Plan"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
-
+        <!-- Exercises Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,9 +42,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cardio, strength training, walking, etc."
-            android:layout_marginBottom="8dp"/>
+            android:paddingBottom="8dp" />
 
-
+        <!-- Hours Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,9 +58,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1-2 hours per day"
-            android:layout_marginBottom="8dp"/>
+            android:paddingBottom="8dp" />
 
-
+        <!-- Diet Plans Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,8 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Balanced diet, portion control, etc."
-            android:layout_marginBottom="8dp"/>
+            android:paddingBottom="8dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
-

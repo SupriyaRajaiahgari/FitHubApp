@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Loginactivity">
+    tools:context=".LoginActivity">
 
 
 
@@ -38,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
-
+    <!-- Login Button -->
     <Button
         android:id="@+id/LoginBTN"
         android:layout_width="0dp"
@@ -55,7 +55,7 @@
         android:id="@+id/RegisterBTN"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="84dp"
         android:text="Register"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
