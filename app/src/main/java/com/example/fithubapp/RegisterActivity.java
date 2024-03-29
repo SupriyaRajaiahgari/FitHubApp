@@ -13,7 +13,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
     }
-    //Added onClick Property
+    //Added onClick Property to register
     public void OnclickRegisterBTN(View view) {
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
