@@ -64,7 +64,6 @@ public class BMICalculator extends AppCompatActivity {
 
             }
         }
-
         public void clear(View v) {
             EditText WeightET = findViewById(R.id.WeightET);
             EditText HeightET = findViewById(R.id.HeightET);
