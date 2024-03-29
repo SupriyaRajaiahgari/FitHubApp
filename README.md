@@ -25,15 +25,21 @@ especially if the API response times are slow or if there are network issues. Im
 
 
 Contributors:
+
+
 Supriya Panyala Rajaiahgari(S566492) :
 1.	LoginAcitivity
 2.	RegisterActivity
 3.	CreateProfileActivity
 4.	ForgotPasswordActivity
+
+
 Sai Kumar Maram (S565093):
 1.	BMICalculator
 2.	WeightPlans
 3.	OverWeight
+
+
 Nithish Kumar Madavali (S564535):
 1.	Underweight
 2.	Bodybuild
