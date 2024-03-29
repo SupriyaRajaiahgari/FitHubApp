@@ -13,7 +13,7 @@ public class CreateProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_profile);
     }
-
+    //Added onClick Property
     public void OnclickSaveProfileBTN(View view)
     {
 
