@@ -22,3 +22,29 @@ If the API is discontinued or changes significantly, it could require substantia
 Performance Impact: Introducing external API calls can impact the performance of your application, 
 especially if the API response times are slow or if there are network issues. Implement proper error handling and caching strategies to mitigate these risks.
 
+
+
+
+
+Contributors:
+
+
+Supriya Panyala Rajaiahgari(S566492) :
+1.	LoginAcitivity
+2.	RegisterActivity
+3.	CreateProfileActivity
+4.	ForgotPasswordActivity
+
+
+Sai Kumar Maram (S565093):
+1.	BMICalculator
+2.	WeightPlans
+3.	OverWeight
+
+
+Nithish Kumar Madavali (S564535):
+1.	Underweight
+2.	Bodybuild
+3.	Growth
+
+
