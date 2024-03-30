@@ -28,7 +28,6 @@ especially if the API response times are slow or if there are network issues. Im
 
 Contributors:
 
-
 Supriya Panyala Rajaiahgari(S566492) :
 1.	LoginAcitivity
 2.	RegisterActivity
@@ -46,5 +45,18 @@ Nithish Kumar Madavali (S564535):
 1.	Underweight
 2.	Bodybuild
 3.	Growth
+
+
+we are using  the local storage for this project....
+
+
+
+We can use the internal or external storage choices that the Android framework offers to attach local storage to an Android project. While external storage gives access to shared or private storage that is accessible by other programs, internal storage provides a private area for data particular to a single app. Context can be used to write to internal storage.utilize context to read using openFileOutput().openFileInput(). Verify the availability of external storage using Environment.write/read files using FileOutputStream and FileInputStream, respectively, after calling getExternalStorageState(). For reliable file operations, don't forget to specify the proper permissions in the manifest and to gracefully manage exceptions and storage availability.
+
+
+
+
+
+
 
 
