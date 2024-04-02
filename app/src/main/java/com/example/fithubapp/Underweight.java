@@ -14,7 +14,7 @@ public class Underweight extends AppCompatActivity {
         setContentView(R.layout.activity_underweight);
     }
 
-    public void OnclickGrowthBTN1(View view) {
+    public void OnclickBulidBTN(View view) {
         Intent intent = new Intent(this, Growth.class);
         startActivity(intent);
 
