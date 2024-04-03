@@ -102,13 +102,14 @@
         android:id="@+id/SaveProfileBTN"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Save Profile"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFitnessGoal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp" />
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:onClick="OnclickSaveProfileBTN"
+        android:text="Save Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFitnessGoal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

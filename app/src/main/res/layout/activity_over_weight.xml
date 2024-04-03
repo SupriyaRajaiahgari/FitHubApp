@@ -11,15 +11,16 @@
         android:id="@+id/overweightPlanLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginBottom="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="Overweight Plan"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -37,8 +38,8 @@
             android:id="@+id/exercisesTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cardio, strength training, walking, etc."
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:text="Cardio, strength training, walking, etc." />
 
 
         <TextView
@@ -53,8 +54,8 @@
             android:id="@+id/hoursTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1-2 hours per day"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:text="1-2 hours per day" />
 
 
         <TextView
@@ -69,9 +70,22 @@
             android:id="@+id/dietPlansTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Balanced diet, portion control, etc."
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:text="Balanced diet, portion control, etc." />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/GrowthBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="OnclickGrowthBTN"
+        android:text="Growth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

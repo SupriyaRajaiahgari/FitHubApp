@@ -71,7 +71,7 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
-        android:onClick="Next"
+        android:onClick="OnclickNextBTN"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

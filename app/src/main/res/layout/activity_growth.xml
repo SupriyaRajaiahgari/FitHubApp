@@ -62,10 +62,11 @@
         app:layout_constraintTop_toBottomOf="@+id/CalculateBTN" />
 
     <Button
-        android:id="@+id/btnRedirectToBMI"
+        android:id="@+id/RedirectToBMI"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:onClick="OnclickRedirectToBMI"
         android:text="Redirect to BMI Calculator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

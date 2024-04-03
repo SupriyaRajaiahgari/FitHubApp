@@ -18,4 +18,17 @@ public class WeightPlans extends AppCompatActivity {
         Intent intent = new Intent(this, OverWeight.class);
         startActivity(intent);
     }
+
+    public void OnclickUnderWeightBTN(View view) {
+        Intent intent = new Intent(this, Underweight.class);
+        startActivity(intent);
+
+
+    }
+
+    public void OnclickBodyBuildBTN(View view) {
+        Intent intent = new Intent(this, Bodybuild.class);
+        startActivity(intent);
+
+    }
 }
