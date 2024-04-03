@@ -12,7 +12,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:background="@drawable/background_rounded_corner"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,70 +21,70 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="8dp"
             android:text="BodyBuild Plan"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:padding="8dp" />
+            android:textStyle="bold" />
 
         <!-- Exercises Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:text="Exercises"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/exercisesTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cardio, strength training, walking, etc."
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:paddingBottom="8dp" />
+            android:paddingBottom="8dp"
+            android:text="Cardio, strength training, walking, etc." />
 
         <!-- Hours Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:text="Hours"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/hoursTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1-2 hours per day"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:paddingBottom="8dp" />
+            android:paddingBottom="8dp"
+            android:text="1-2 hours per day" />
 
         <!-- Diet Plans Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:text="Diet Plans"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/dietPlansTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Balanced diet, portion control, etc."
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:paddingBottom="8dp" />
+            android:paddingBottom="8dp"
+            android:text="Balanced diet, portion control, etc." />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
