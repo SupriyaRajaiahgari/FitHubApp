@@ -96,6 +96,15 @@
             android:text="Balanced diet, portion control, etc."
             android:layout_marginBottom="8dp"/>
 
+        <ImageView
+            android:id="@+id/bodybuilddietimg"
+            android:layout_width="400dp"
+            android:layout_height="210dp"
+            android:src="@drawable/bodybuilddiet"
+            app:layout_constraintStart_toEndOf="@+id/dietPlansTextView"
+            app:layout_constraintTop_toBottomOf="@+id/dietPlansTextView"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
 
 
 
