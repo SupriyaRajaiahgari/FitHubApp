@@ -46,6 +46,15 @@
             android:paddingBottom="8dp"
             android:text="Cardio, strength training, walking, etc." />
 
+        <ImageView
+            android:id="@+id/bodybuildimg"
+            android:layout_width="350dp"
+            android:layout_height="170dp"
+            android:src="@drawable/bodybuildexercises"
+            app:layout_constraintStart_toEndOf="@+id/exercisesTextView"
+            app:layout_constraintTop_toBottomOf="@+id/exercisesTextView"
+            app:layout_constraintBottom_toTopOf="@+id/hoursTextView" />
+
         <!-- Hours Section -->
         <TextView
             android:layout_width="wrap_content"
@@ -84,7 +93,11 @@
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
             android:paddingBottom="8dp"
-            android:text="Balanced diet, portion control, etc." />
+            android:text="Balanced diet, portion control, etc."
+            android:layout_marginBottom="8dp"/>
+
+
+
 
     </LinearLayout>
 
