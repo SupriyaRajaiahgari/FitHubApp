@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -13,6 +14,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
+
 
     public void OnclickLoginBTN(View view) {
         Intent intent = new Intent(this, CreateProfileActivity.class);
@@ -31,5 +33,12 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent2 = new Intent(this, ForgotPasswordActivity.class);
             startActivity(intent2);
         }
+
+
+
+
     }
+
+
+
 
