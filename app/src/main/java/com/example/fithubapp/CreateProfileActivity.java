@@ -14,6 +14,7 @@ public class CreateProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_profile);
     }
     //Added onClick Property
+
     public void OnclickSaveProfileBTN(View view)
     {
 
