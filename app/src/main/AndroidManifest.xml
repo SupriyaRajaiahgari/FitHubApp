@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FitHubApp"
         tools:targetApi="31">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".Growth"
             android:exported="false" />
         <activity
@@ -37,10 +40,6 @@
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-
-        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -52,5 +51,3 @@
     </application>
 
 </manifest>
-
-

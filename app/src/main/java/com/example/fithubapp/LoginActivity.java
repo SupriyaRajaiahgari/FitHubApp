@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                 // Check if username and password are valid (this is just a placeholder)
                 if (isValidLogin(username, password)) {
                     // Navigate to CreateProfileActivity upon successful login
-                    navigateToCreateProfileActivity();
+                    navigateToBMICalculator();
                 } else {
                     // Show a toast message indicating invalid credentials
                     Toast.makeText(LoginActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
@@ -71,9 +71,9 @@ forgotPasswordTV.setOnClickListener(new View.OnClickListener()
         return username.equals("demo") && password.equals("demo123");
     }
 
-    // Method to navigate to CreateProfileActivity
-    private void navigateToCreateProfileActivity() {
-        Intent intent = new Intent(LoginActivity.this, CreateProfileActivity.class);
+    // Method to navigate to BMICalculator
+    private void navigateToBMICalculator() {
+        Intent intent = new Intent(LoginActivity.this, BMICalculator.class);
         startActivity(intent);
         finish(); // Optional: Finish the LoginActivity so the user can't go back using the back button
     }
