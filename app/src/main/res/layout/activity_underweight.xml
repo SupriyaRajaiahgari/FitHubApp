@@ -9,8 +9,8 @@
     <!-- Underweight Plan Layout -->
     <LinearLayout
         android:id="@+id/underweightPlanLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="419dp"
+        android:layout_height="618dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,6 +24,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|center_horizontal"
             android:paddingBottom="8dp"
             android:text="Underweight Plan"
             android:textSize="24sp"
@@ -42,8 +44,20 @@
             android:id="@+id/exercisesTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:paddingBottom="8dp"
-            android:text="Cardio, strength training, walking, etc." />
+            android:text="Back,  biceps, teceps etc." />
+
+
+
+        <ImageView
+            android:id="@+id/underimage"
+            android:layout_width="350dp"
+            android:layout_height="170dp"
+            android:src="@drawable/underweightexercises"
+            app:layout_constraintBottom_toBottomOf="@+id/exercisesTextView"
+            app:layout_constraintStart_toEndOf="@+id/exercisesTextView"
+            app:layout_constraintTop_toTopOf="@+id/exercisesTextView" />
 
         <!-- Hours Section -->
         <TextView
@@ -58,8 +72,9 @@
             android:id="@+id/hoursTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:paddingBottom="8dp"
-            android:text="1-2 hours per day" />
+            android:text="2 hours per day" />
 
         <!-- Diet Plans Section -->
         <TextView
@@ -74,21 +89,32 @@
             android:id="@+id/dietPlansTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:paddingBottom="8dp"
             android:text="Balanced diet, portion control, etc." />
+
+
+        <ImageView
+            android:id="@+id/underwgtimage"
+            android:layout_width="400dp"
+            android:layout_height="210dp"
+            android:src="@drawable/weightgain"
+            app:layout_constraintBottom_toBottomOf="@+id/dietPlansTextView"
+            app:layout_constraintStart_toEndOf="@+id/dietPlansTextView"
+            app:layout_constraintTop_toTopOf="@+id/dietPlansTextView" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/BulidBTN"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="OnclickGrowthBTN1"
         android:text="Bulid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.92" />
 </androidx.constraintlayout.widget.ConstraintLayout>

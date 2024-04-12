@@ -44,7 +44,7 @@ public class BMICalculator extends AppCompatActivity {
                     Text += "\nCategory: Under weight";
                     color = getResources().getColor(android.R.color.holo_blue_light);
                 } else if (bmi < 24.9) {
-                    Text += "\nCategory: Normal weight";
+                    Text += "\nCategory: Normal Weight";
                     color = getResources().getColor(android.R.color.holo_green_light);
                 } else if (bmi < 29.9) {
                     Text += "\nCategory: Over weight";

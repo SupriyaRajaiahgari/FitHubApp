@@ -6,12 +6,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fithubbackground1"
     tools:context=".LoginActivity">
 
 
     <!-- Forgot Password Button -->
 
+    <!-- Login Button -->
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="0dp"
@@ -24,13 +24,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.171" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:textSize="24sp"
@@ -38,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
-    <!-- Login Button -->
+
     <Button
         android:id="@+id/LoginBTN"
         android:layout_width="0dp"
@@ -53,28 +53,55 @@
         app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
 
     <Button
+
         android:id="@+id/CreateProfileBTN"
         android:layout_width="0dp"
+
+        android:id="@+id/RegisterBTN"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="28dp"
         android:onClick="OnclickRegisterBTN"
         android:text="Create Profile"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LoginBTN" />
 
-    <Button
-        android:id="@+id/ForgotPasswordBTN"
+
+    <TextView
+    android:id="@+id/ForgotPassword"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="44dp"
+    android:text="Forgot Password?"
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/RegisterBTN" />
+
+
+    <TextView
+        android:id="@+id/FibhubID"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="56dp"
-        android:onClick="OnclickForgotPasswordBTN"
-        android:text="Forgot Password?"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="260dp"
+        android:background="#F3A7A7"
+        android:gravity="center"
+        android:text="FitHub"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
         app:layout_constraintTop_toBottomOf="@id/CreateProfileBTN" />
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

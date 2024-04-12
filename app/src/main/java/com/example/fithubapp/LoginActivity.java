@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.widget.TextView;
+
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -20,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
 
         // Initialize views
         usernameEditText = findViewById(R.id.usernameEditText);
@@ -43,7 +48,22 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+    TextView forgotPasswordTV = findViewById(R.id.ForgotPassword);
+forgotPasswordTV.setOnClickListener(new View.OnClickListener()
+
+    {
+        @Override
+        public void onClick (View v){
+        Intent intent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
+        startActivity(intent);
+
     }
+    });
+}
+
+
 
     // Placeholder method to check login credentials (replace with your actual logic)
     private boolean isValidLogin(String username, String password) {
@@ -67,9 +87,9 @@ public class LoginActivity extends AppCompatActivity {
         //Added onClick property
 
 
-        public void OnclickForgotPasswordBTN (View view){
-            Intent intent2 = new Intent(this, ForgotPasswordActivity.class);
-            startActivity(intent2);
-        }
+
     }
+
+
+
 

@@ -9,11 +9,12 @@
 
     <LinearLayout
         android:id="@+id/overweightPlanLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_width="406dp"
+        android:layout_height="624dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -38,8 +39,19 @@
             android:id="@+id/exercisesTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="8dp"
-            android:text="Cardio, strength training, walking, etc." />
+
+            android:text="Cardio  strength training" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="350dp"
+            android:layout_height="170dp"
+            android:src="@drawable/cardiost"
+            app:layout_constraintBottom_toBottomOf="@+id/exercisesTextView"
+            app:layout_constraintStart_toEndOf="@+id/exercisesTextView"
+            app:layout_constraintTop_toTopOf="@+id/exercisesTextView" />
 
 
         <TextView
@@ -54,8 +66,9 @@
             android:id="@+id/hoursTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="8dp"
-            android:text="1-2 hours per day" />
+            android:text="2 hours per day" />
 
 
         <TextView
@@ -70,22 +83,33 @@
             android:id="@+id/dietPlansTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="8dp"
             android:text="Balanced diet, portion control, etc." />
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:src="@drawable/dietplanweight"
+            app:layout_constraintBottom_toBottomOf="@+id/dietPlansTextView"
+            app:layout_constraintStart_toEndOf="@+id/dietPlansTextView"
+            app:layout_constraintTop_toTopOf="@+id/dietPlansTextView" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/GrowthBTN"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="OnclickGrowthBTN"
         android:text="Growth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.954" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
