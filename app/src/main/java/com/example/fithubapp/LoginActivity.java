@@ -85,9 +85,6 @@ forgotPasswordTV.setOnClickListener(new View.OnClickListener()
 
 
         //Added onClick property
-
-
-
     }
 
 
