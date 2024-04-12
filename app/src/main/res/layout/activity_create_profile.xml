@@ -99,14 +99,14 @@
         app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
    <!--Save Profile Button-->
     <Button
-        android:id="@+id/SaveProfileBTN"
+        android:id="@+id/SignUpBTN"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
         android:onClick="OnclickSaveProfileBTN"
-        android:text="Save Profile"
+        android:text="Sign Up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextFitnessGoal" />
