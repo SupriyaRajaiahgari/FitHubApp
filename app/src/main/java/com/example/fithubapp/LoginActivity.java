@@ -13,7 +13,20 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+    TextView forgotPasswordTV = findViewById(R.id.ForgotPassword);
+forgotPasswordTV.setOnClickListener(new View.OnClickListener()
+
+    {
+        @Override
+        public void onClick (View v){
+        Intent intent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
+        startActivity(intent);
     }
+    });
+}
+
 
 
     public void OnclickLoginBTN(View view) {
@@ -28,13 +41,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent1);
 
         }
-
-        public void OnclickForgotPasswordBTN (View view){
-            Intent intent2 = new Intent(this, ForgotPasswordActivity.class);
-            startActivity(intent2);
-        }
-
-
 
 
     }

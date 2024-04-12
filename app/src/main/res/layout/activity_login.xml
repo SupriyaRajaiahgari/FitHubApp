@@ -66,17 +66,17 @@
         app:layout_constraintTop_toBottomOf="@id/LoginBTN" />
 
 
-    <Button
-        android:id="@+id/ForgotPasswordBTN"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="44dp"
-        android:onClick="OnclickForgotPasswordBTN"
-        android:text="Forgot Password?"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/RegisterBTN" />
+    <TextView
+    android:id="@+id/ForgotPassword"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="44dp"
+    android:text="Forgot Password?"
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/RegisterBTN" />
+
 
 
     <TextView
