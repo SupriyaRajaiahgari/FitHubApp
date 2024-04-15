@@ -73,17 +73,17 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="44dp"
         android:text="Forgot Password?"
-        android:textSize="12sp"
+        android:textColorLink="#324AC8"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/CreateProfileBTN" />
-
 
 
     <TextView
         android:id="@+id/FibhubID"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:background="#F3A7A7"
+        android:background="#F6D9D9"
         android:gravity="center"
         android:text="FitHub"
         android:textSize="34sp"

@@ -1,14 +1,14 @@
 package com.example.fithubapp;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -51,6 +51,10 @@ public class CreateProfileActivity extends AppCompatActivity {
 
                 if (firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || password.isEmpty() || dateOfBirth.isEmpty() || phoneNumber.isEmpty() || fitnessGoal.isEmpty()) {
                     Toast.makeText(CreateProfileActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                } else if (!isValidPhoneNumber(phoneNumber)) {
+                    Toast.makeText(CreateProfileActivity.this, "Please enter a valid phone number", Toast.LENGTH_SHORT).show();
+                } else if (!isValidPassword(password)) {
+                    Toast.makeText(CreateProfileActivity.this, "Password should contain at least one uppercase letter, one digit, and one special character", Toast.LENGTH_SHORT).show();
                 } else {
                     // Create user in Firebase Authentication
                     mAuth.createUserWithEmailAndPassword(email, password)
@@ -72,5 +76,15 @@ public class CreateProfileActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private boolean isValidPhoneNumber(String phoneNumber) {
+        // Check if the phone number contains only digits and has a length of 10
+        return phoneNumber.matches("\\d{10}");
+    }
+
+    private boolean isValidPassword(String password) {
+        // Check if the password contains at least one uppercase letter, one digit, and one special character
+        return password.matches("^(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$");
     }
 }

@@ -106,11 +106,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/BulidBTN"
+        android:id="@+id/ImproveBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="OnclickGrowthBTN1"
-        android:text="Bulid"
+        android:onClick="OnclickImproveBTN"
+        android:text="Improve"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.894"

@@ -125,5 +125,3 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextFitnessGoal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

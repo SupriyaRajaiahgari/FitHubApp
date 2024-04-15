@@ -111,10 +111,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/BulidBTN"
+        android:id="@+id/BuildBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="OnclickGrowthBTN1"
+        android:onClick="OnclickBuildBTN"
         android:text="Bulid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
