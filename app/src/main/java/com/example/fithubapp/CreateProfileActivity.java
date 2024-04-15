@@ -7,12 +7,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class CreateProfileActivity extends AppCompatActivity {
 
     private EditText editTextFirstName, editTextLastName, editTextEmail, editTextPassword, editTextDateOfBirth, editTextPhoneNumber, editTextFitnessGoal;
-    private Button SignUpBTN;
+    private Button signUpButton;
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,49 +30,47 @@ public class CreateProfileActivity extends AppCompatActivity {
         editTextFirstName = findViewById(R.id.editTextFirstName);
         editTextLastName = findViewById(R.id.editTextLastName);
         editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPassword = findViewById(R.id.editTextPassword); // Added this line
+        editTextPassword = findViewById(R.id.editTextPassword);
         editTextDateOfBirth = findViewById(R.id.editTextDateOfBirth);
         editTextPhoneNumber = findViewById(R.id.editTextPhoneNumber);
         editTextFitnessGoal = findViewById(R.id.editTextFitnessGoal);
-        SignUpBTN = findViewById(R.id.SignUpBTN); // Changed variable name to SignUpBTN
+        signUpButton = findViewById(R.id.SignUpBTN);
 
-        SignUpBTN.setOnClickListener(new View.OnClickListener() {
+        mAuth = FirebaseAuth.getInstance();
+
+        signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String firstName = editTextFirstName.getText().toString();
                 String lastName = editTextLastName.getText().toString();
                 String email = editTextEmail.getText().toString();
-                String password = editTextPassword.getText().toString(); // Changed variable name to editTextPassword
+                String password = editTextPassword.getText().toString();
                 String dateOfBirth = editTextDateOfBirth.getText().toString();
                 String phoneNumber = editTextPhoneNumber.getText().toString();
                 String fitnessGoal = editTextFitnessGoal.getText().toString();
-                // Perform validation and registration logic here
-                // For example, you can check if the fields are empty and show a toast message
+
                 if (firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || password.isEmpty() || dateOfBirth.isEmpty() || phoneNumber.isEmpty() || fitnessGoal.isEmpty()) {
                     Toast.makeText(CreateProfileActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Registration logic
-                    // You can proceed with registering the user in your database or authentication system
-                    // For demonstration purposes, show a toast message
-                    Toast.makeText(CreateProfileActivity.this, "Profile Created successful", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(CreateProfileActivity.this, LoginActivity.class);
-                    startActivity(intent);
+                    // Create user in Firebase Authentication
+                    mAuth.createUserWithEmailAndPassword(email, password)
+                            .addOnCompleteListener(CreateProfileActivity.this, new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
+                                        // Sign up success, update UI with the signed-in user's information
+                                        Toast.makeText(CreateProfileActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                                        // Proceed to BMI Calculator or other activity
+                                        startActivity(new Intent(CreateProfileActivity.this, LoginActivity.class));
+                                        finish(); // Finish the current activity
+                                    } else {
+                                        // If sign up fails, display a message to the user.
+                                        Toast.makeText(CreateProfileActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
                 }
-
-
-
             }
         });
     }
-
-//    //Added onClick Property
-//
-//    public void OnclickSignUpBTN(View view)
-//    {
-//
-//        Intent intent = new Intent(this, LoginActivity.class);
-//        startActivity(intent);
-//    }
-
-
 }
