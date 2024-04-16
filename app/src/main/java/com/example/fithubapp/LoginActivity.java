@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -37,6 +38,16 @@ public class LoginActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.passwordEditText);
         loginButton = findViewById(R.id.LoginBTN);
         createProfileButton = findViewById(R.id.CreateProfileBTN);
+        TextView forgotPasswordTV = findViewById(R.id.ForgotPassword); // Added line
+
+        // Set onClickListener for the "Forgot Password" TextView
+        forgotPasswordTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Set onClickListener for the login button
         loginButton.setOnClickListener(new View.OnClickListener() {

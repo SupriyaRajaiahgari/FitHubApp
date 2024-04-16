@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import android.os.Bundle;
@@ -70,5 +71,6 @@ public class Growth extends AppCompatActivity {
         startActivity(intent);
         // finish(); // Optional: Close the current activity to prevent going back with back button
     }
+
 }
 
