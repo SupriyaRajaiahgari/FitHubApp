@@ -70,7 +70,7 @@ Password: Fithub@03
 
 Sequence Information :    loginpage --> BMI claculator --> weightplans  
                               | -> Create profile               |-> overweight plan  -----|
-                              | -> Resgister                    |-> underweight plan -----|-------> Growth---> Redirect to Bmiclaculator 
+                              | -> Forgot password                   |-> underweight plan -----|-------> Growth---> Redirect to Bmiclaculator 
                                                                 |->  BulidBody plan   -----|
 
 

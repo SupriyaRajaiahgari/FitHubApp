@@ -6,12 +6,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ass6"
     tools:context=".LoginActivity">
 
 
     <!-- Forgot Password Button -->
 
     <!-- Login Button -->
+
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="315dp"
+        android:layout_height="115dp"
+        android:src="@drawable/projectlogo1"
+        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="0dp"
@@ -78,21 +93,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/CreateProfileBTN" />
 
-
-    <TextView
-        android:id="@+id/FibhubID"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="#F6D9D9"
-        android:gravity="center"
-        android:text="FitHub"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
