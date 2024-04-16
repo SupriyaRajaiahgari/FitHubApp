@@ -30,6 +30,7 @@
             android:paddingBottom="8dp"
             android:text="Underweight Plan"
             android:textSize="24sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
         <!-- Exercises Section -->
@@ -39,6 +40,7 @@
             android:layout_marginTop="8dp"
             android:text="Exercises"
             android:textSize="20sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
@@ -47,6 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingBottom="8dp"
+            android:textColor="#000000"
             android:text="Back,  biceps, teceps etc." />
 
 
@@ -67,6 +70,7 @@
             android:layout_marginTop="8dp"
             android:text="Hours"
             android:textSize="20sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
@@ -75,6 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingBottom="8dp"
+            android:textColor="#000000"
             android:text="2 hours per day" />
 
         <!-- Diet Plans Section -->
@@ -84,6 +89,7 @@
             android:layout_marginTop="8dp"
             android:text="Diet Plans"
             android:textSize="20sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
@@ -92,6 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingBottom="8dp"
+            android:textColor="#000000"
             android:text="Balanced diet, portion control, etc." />
 
 

@@ -24,6 +24,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="BodyBuild Plan"
+            android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -36,6 +37,7 @@
             android:paddingEnd="8dp"
             android:text="Exercises"
             android:textSize="18sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
@@ -44,6 +46,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
+            android:textColor="#000000"
             android:paddingBottom="8dp"
             android:text="Cardio, strength training, walking, etc." />
 
@@ -64,6 +67,7 @@
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
             android:text="Hours"
+            android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -73,6 +77,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
+            android:textColor="#000000"
             android:paddingBottom="8dp"
             android:text="1-2 hours per day" />
 
@@ -85,6 +90,7 @@
             android:paddingEnd="8dp"
             android:text="Diet Plans"
             android:textSize="18sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
@@ -93,6 +99,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
+            android:textColor="#000000"
             android:paddingBottom="8dp"
             android:text="Balanced diet, portion control, etc."
             android:layout_marginBottom="8dp"/>

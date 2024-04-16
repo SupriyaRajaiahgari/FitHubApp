@@ -25,6 +25,7 @@
             android:layout_gravity="center_horizontal"
             android:text="Overweight Plan"
             android:textSize="24sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
 
@@ -42,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="8dp"
-
+            android:textColor="#000000"
             android:text="Cardio  strength training" />
 
         <ImageView
@@ -61,6 +62,7 @@
             android:layout_marginTop="8dp"
             android:text="Hours"
             android:textSize="18sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
@@ -69,6 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="8dp"
+            android:textColor="#000000"
             android:text="2 hours per day" />
 
 
@@ -78,6 +81,7 @@
             android:layout_marginTop="8dp"
             android:text="Diet Plans"
             android:textSize="18sp"
+            android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
@@ -86,6 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="8dp"
+            android:textColor="#000000"
             android:text="Balanced diet, portion control, etc." />
 
 
