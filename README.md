@@ -64,8 +64,8 @@ USB Port: If you plan to test your Android applications on physical devices, ens
 
 
 Test Credentials:
-Username: fithub@gmail.com
-Password: Fithub@03
+Username: kumar@gmail.com
+Password: Kumar@123
 
 
 Sequence Information :    loginpage --> BMI claculator --> weightplans  
