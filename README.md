@@ -68,10 +68,11 @@ Username: kumar@gmail.com
 Password: Kumar@123
 
 
-Sequence Information :    loginpage --> BMI claculator --> weightplans  
-                              | -> Create profile               |-> overweight plan  -----|
-                              | -> Forgot password                   |-> underweight plan -----|-------> Growth---> Redirect to Bmiclaculator 
-                                                                |->  BulidBody plan   -----|
+Sequence Information : 
+loginpage --> BMI claculator    -->       weightplans  
+            | -> Create profil         |-> overweight plan  -----|
+            | -> Forgot password       |-> underweight plan -----|  -------> Growth---> Redirect to Bmiclaculator 
+                                       |->  BulidBody plan  -----|
 
 
 
